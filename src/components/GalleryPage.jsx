@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion'
-import { Heart, Camera, Sparkles, Star } from 'lucide-react'
+import { Heart, Camera } from 'lucide-react'
 
 const GalleryPage = () => {
   const photos = [
-    { image: '/src/images/14.jpeg', title: 'Beautiful Memory' },
-    { image: '/src/images/2.jpeg', title: 'Sweet Moment' },
-    { image: '/src/images/18.jpeg', title: 'Happy Times' },
-    { image: '/src/images/7.jpeg', title: 'Precious Memory' },
-    { image: '/src/images/17.jpeg', title: 'Joyful Moment' },
-    { image: '/src/images/16.jpeg', title: 'Special Day' }
+    { image: '/images/14.jpeg', title: 'Beautiful Memory' },
+    { image: '/images/2.jpeg', title: 'Sweet Moment' },
+    { image: '/images/18.jpeg', title: 'Happy Times' },
+    { image: '/images/7.jpeg', title: 'Precious Memory' },
+    { image: '/images/17.jpeg', title: 'Joyful Moment' },
+    { image: '/images/16.jpeg', title: 'Special Day' }
   ]
 
   return (

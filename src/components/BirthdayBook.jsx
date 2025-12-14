@@ -10,27 +10,27 @@ const BirthdayBook = () => {
   // Exactly 5 pages with specific images
   const pages = [
     {
-      image: '/src/images/1.jpeg',
+      image: '/images/1.jpeg',
       wish: "Happy Birthday Krishi! 🎉 May this special day bring you endless joy and wonderful surprises! Your smile lights up every room you enter.",
       pageNumber: 1
     },
     {
-      image: '/src/images/5.jpeg',
+      image: '/images/5.jpeg',
       wish: "Wishing you a year filled with happiness, love, and all your heart desires! 💖 You deserve all the beautiful things life has to offer.",
       pageNumber: 2
     },
     {
-      image: '/src/images/10.jpeg',
+      image: '/images/10.jpeg',
       wish: "May your birthday be as amazing as you are! ✨ Here's to another year of beautiful memories and incredible adventures ahead.",
       pageNumber: 3
     },
     {
-      image: '/src/images/8.jpeg',
+      image: '/images/8.jpeg',
       wish: "Happy Birthday! 🎂 May every moment of your special day be filled with the same joy you bring to everyone around you.",
       pageNumber: 4
     },
     {
-      image: '/src/images/13.jpeg',
+      image: '/images/13.jpeg',
       wish: "On your birthday, I wish you happiness, health, and all the love in the world! 🌟 You make every day brighter just by being you!",
       pageNumber: 5
     }
