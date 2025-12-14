@@ -43,7 +43,7 @@ const WishesPage = () => {
               transition={{ delay: 0.5 }}
               className="text-2xl md:text-3xl font-cormorant italic text-gray-300"
             >
-              Dear Krishi,
+              Dear Best Bestest Friend Forever,
             </motion.p>
 
             <motion.div

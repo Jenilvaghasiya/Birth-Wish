@@ -9,6 +9,7 @@ import GalleryPage from './components/GalleryPage'
 import WishesPage from './components/WishesPage'
 import InteractivePage from './components/InteractivePage'
 import FinalePage from './components/FinalePage'
+import PremiumBookDemo from './components/PremiumBookDemo'
 import Background from './components/Background'
 import Navigation from './components/Navigation'
 import MusicPlayer from './components/MusicPlayer'
@@ -17,7 +18,7 @@ import MobileCursor from './components/MobileCursor'
 function App() {
   const [currentPage, setCurrentPage] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
-  const totalPages = 7
+  const totalPages = 8
 
   // Detect if device is mobile
   useEffect(() => {
@@ -64,6 +65,7 @@ function App() {
     <GalleryPage key="gallery" />,
     <WishesPage key="wishes" />,
     <InteractivePage key="interactive" />,
+    <PremiumBookDemo key="book" />,
     <FinalePage key="finale" />
   ]
 

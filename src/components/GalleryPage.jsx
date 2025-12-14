@@ -3,12 +3,12 @@ import { Heart, Camera, Sparkles, Star } from 'lucide-react'
 
 const GalleryPage = () => {
   const photos = [
-    { icon: Heart, gradient: 'from-red-900 to-red-600' },
-    { icon: Camera, gradient: 'from-gray-800 to-gray-600' },
-    { icon: Sparkles, gradient: 'from-red-800 to-pink-600' },
-    { icon: Star, gradient: 'from-gray-900 to-red-900' },
-    { icon: Heart, gradient: 'from-red-700 to-red-500' },
-    { icon: Camera, gradient: 'from-gray-700 to-red-700' }
+    { image: '/src/images/14.jpeg', title: 'Beautiful Memory' },
+    { image: '/src/images/2.jpeg', title: 'Sweet Moment' },
+    { image: '/src/images/18.jpeg', title: 'Happy Times' },
+    { image: '/src/images/7.jpeg', title: 'Precious Memory' },
+    { image: '/src/images/17.jpeg', title: 'Joyful Moment' },
+    { image: '/src/images/16.jpeg', title: 'Special Day' }
   ]
 
   return (
@@ -29,9 +29,9 @@ const GalleryPage = () => {
           </motion.div>
           
           <h2 className="text-4xl md:text-6xl font-playfair font-bold mb-4 glow-text">
-            Memories & Moments
+            My ButterCup 
           </h2>
-          <p className="text-gray-400 text-lg">Capturing the beautiful journey</p>
+          {/* <p className="text-gray-400 text-lg">Capturing the beautiful journey</p> */}
         </motion.div>
 
         <div className="glass rounded-3xl p-6 md:p-12 border border-white/10">
@@ -46,15 +46,25 @@ const GalleryPage = () => {
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer"
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${photo.gradient} opacity-80 group-hover:opacity-100 transition-opacity`} />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <photo.icon className="w-12 h-12 md:w-16 md:h-16 text-white/80 group-hover:text-white group-hover:scale-110 transition-all" strokeWidth={1.5} />
-                </div>
+                {/* Photo Image */}
+                <img
+                  src={photo.image}
+                  alt={photo.title}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-110"
+                />
+                
+                {/* Overlay Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+                
+                {/* Border */}
                 <div className="absolute inset-0 border-2 border-white/10 group-hover:border-primary/50 rounded-2xl transition-colors" />
                 
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="text-white text-sm font-light">Add Photo</span>
+                {/* Hover Overlay with Title */}
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-4">
+                  <div className="text-center">
+                    <Heart className="w-6 h-6 text-primary mx-auto mb-2" />
+                    <span className="text-white text-sm font-light">{photo.title}</span>
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -67,11 +77,11 @@ const GalleryPage = () => {
             transition={{ delay: 0.8 }}
             className="text-center"
           >
-            <div className="inline-flex items-center gap-2 text-gray-500 text-sm">
+            {/* <div className="inline-flex items-center gap-2 text-gray-500 text-sm">
               <Sparkles className="w-4 h-4" />
-              <span>Add your favorite photos of Krishi here</span>
+              <span>Beautiful memories of Krishi's special moments</span>
               <Sparkles className="w-4 h-4" />
-            </div>
+            </div> */}
           </motion.div>
         </div>
 
